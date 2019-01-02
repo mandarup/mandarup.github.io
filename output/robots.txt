@@ -1,0 +1,4 @@
+Sitemap: https://mandarup.github.io/sitemapindex.xml
+
+User-Agent: *
+Host: mandarup.github.io
