@@ -11,4 +11,4 @@ Chatbots are amazing!
 
 {% include embed.html url="chat.curiositybytes.com"  %}
 
-{% include image.html url="http://www.gratisography.com" image="projects/chatbot/wall.jpg" %}
+<!-- {% include image.html url="http://www.gratisography.com" image="projects/chatbot/wall.jpg" %} -->
