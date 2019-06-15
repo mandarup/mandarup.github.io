@@ -7,7 +7,7 @@ title: 'Feeling Chatty?'
 Chatbots are amazing, aren't they?
 
 
-{% include image.html url="http://chat.curiositybytes.com" image="projects/chatbot/chatbot.mp4" %}
+{% include image.html url="http://chat.curiositybytes.com" image="projects/chatbot/chatbot.gif" %}
 
 
 Or check it out here:
