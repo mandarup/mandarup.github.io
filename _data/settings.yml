@@ -26,7 +26,7 @@ seo:
 # NOTE: If you want to use Google Analytics for basic web tracking: Just uncomment and enter your UA-Code here.
 
 # If you are not using Google Analytics, please change 'google-ID' to an empty string
-google-analytics-ua: 'UA-112060364-3'
+google-analytics-ua: 'UA-142149124-1'
 
 #-------------------------------
 # Disqus Section
@@ -53,7 +53,7 @@ contact: >
 # Work Section
 
 projects:
-- {name: 'ChatBot', folder: 'cahtbot', file: 'projects/chatbot.html'}
+- {name: 'ChatBot', folder: 'chatbot', file: 'projects/chatbot.html'}
 # - {name: 'Project Two', folder: 'proj-2', file: 'projects/proj-2.html'}
 # - {name: 'Project Three', folder: 'proj-3', file: 'projects/proj-3.html'}
 # - {name: 'Project Four', folder: 'proj-4', file: 'projects/proj-4.html'}
