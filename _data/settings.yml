@@ -4,6 +4,8 @@
 menu:
 - {name: 'Projects', url: ''}
 - {name: 'Blog', url: 'pages/blog.html'}
+- {name: 'TIL', url: 'pages/til.html'}
+- {name: 'Notes', url: 'pages/notes.html'}
 - {name: 'About', url: 'pages/about.html'}
 - {name: 'Contact', url: 'pages/contact.html'}
 
@@ -65,8 +67,8 @@ projects:
 social:
 - {icon: 'twitter', link: '#'}
 - {icon: 'instagram', link: '#'}
-- {icon: 'github', link: '#'}
-- {icon: 'linkedin', link: '#'}
+- {icon: 'github', link: 'github.com/mandarup'}
+- {icon: 'linkedin', link: 'https://linkedin.com/in/mandarup'}
 - {icon: 'envelope', link: 'mailto:#'}
 
 # social network icons available: 'twitter' / 'facebook' / 'github' / 'pinterest' 'google-plus' / 'linkedin' / 'youtube' / 'instagram' / 'dribbble' / 'behance' / 'soundcloud' / 'vine'
