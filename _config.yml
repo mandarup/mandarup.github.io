@@ -1,7 +1,7 @@
 # Build settings
 
 markdown: kramdown
-permalink: none
+permalink: /:categories/:year/:month/:day/:title:output_ext
 plugins:             [jekyll-sitemap, jekyll-feed,  jekyll-seo-tag]
 
 port: 4000
@@ -15,3 +15,6 @@ sass:
 title:		           "Mandar Upadhye"
 description:	       "Powered by Jekyll and GitHub Pages"
 author:              "Paul Le"
+
+# paginate: 2
+# paginate_path: "/blog/page:num/"

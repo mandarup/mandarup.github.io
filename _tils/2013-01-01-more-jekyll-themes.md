@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "More Jekyll Themes!"
+categories: [til, tech]
 ---
 
 #### Lagrange

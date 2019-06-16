@@ -16,8 +16,8 @@ Or, try it out below:
 
 #### Version 1 - Monolithic App
 
-Version 1 used a monolithic architecture as depicted in fig below:
-
+Version 1 uses a monolithic architecture for hosting the chatbot, supporting
+both frontend and model hosting in a single server.
 
 Several versions of chat models are available with  architectural variations,
 - Character RNN
@@ -28,15 +28,15 @@ Several versions of chat models are available with  architectural variations,
 Original idea was to allow users choose and compare different models, but
 this feature is currently disabled as current hosting capacity is limited
 for this hobby project. At the time of writing the model deployed is Seq2Seq,
-but this may change without any notice or update to this document. 
+but this may change without any notice or update to this document.
 
 
 #### Version 2 - Microservices approach
 
 This is currently under development. Separating chatbot inference part
 from the frontend will allow easy management of models without
-messing with the frontend server. Also, this will offer some freedom on the model
-serving part and allow experimentation with native (to modeling library) tools such as
+messing with the frontend server. Also, this modular architecture will offer freedom on the model
+serving part and allow experimentation with native (to model library) tools such as
 tf-serving.
 
 <!-- {% include image.html url="http://www.gratisography.com" image="projects/chatbot/wall.jpg" %} -->
