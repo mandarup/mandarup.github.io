@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Text Formatting Examples"
+tags: [jekyll]
 ---
 
 # Markdown Support

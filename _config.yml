@@ -12,9 +12,14 @@ sass:
 
 # Customise atom feed settings (this is where Jekyll-Feed gets configuration information)
 
-title:		           "Mandar Upadhye"
-description:	       "Powered by Jekyll and GitHub Pages"
-author:              "Paul Le"
+title: "Mandar Upadhye"
+description: "Powered by Jekyll and GitHub Pages"
+author: "Mandar Upadhye"
 
 # paginate: 2
 # paginate_path: "/blog/page:num/"
+
+collections:
+  notes :
+    output: true
+    permalink: /:collection/:name

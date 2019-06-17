@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Text Formatting Examples"
-categories: [notes, tech]
+categories: [blog, tech]
 ---
 
 # Markdown Support
