@@ -3,9 +3,9 @@
 
 menu:
 - {name: 'Projects', url: ''}
-- {name: 'Blog', url: 'pages/blog.html'}
-- {name: 'Notes', url: 'pages/notes.html'}
-- {name: 'TIL', url: 'pages/til.html'}
+# - {name: 'Blog', url: 'pages/blog.html'}
+# - {name: 'Notes', url: 'pages/notes.html'}
+# - {name: 'TIL', url: 'pages/til.html'}
 - {name: 'About', url: 'pages/about.html'}
 - {name: 'Contact', url: 'pages/contact.html'}
 
