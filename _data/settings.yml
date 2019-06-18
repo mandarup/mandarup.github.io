@@ -42,14 +42,25 @@ disqus:
 # About Section
 
 about: >
-  # Portfolio Jekyll Theme
 
-  This is a personal portfolio theme that I built from the ground up, using the [DevTips Starter Kit](http://devtipsstarterkit.com/) as a foundation for starting, and following closely the amazing tutorial by [Travis Neilson over at DevTips](https://www.youtube.com/watch?v=T6jKLsxbFg4&list=PL0CB3OvPhDA_STygmp3sDenx3UpdOMk7P). You can [check out the demo](lenpaul.github.io/portfolio-jekyll-theme/), and [fork the repository](https://github.com/LeNPaul/portfolio-jekyll-theme/fork), to get started.
+  # About Me
+
+  I am a Data Scientist. I love building AI products.
+
+  I love Python and coffee, usually together.
+
+  In my free time, I like working on hobby projects with my favorite deep learning libraries (TensorFlow, PyTorch, Keras).
+
+  Feel free to [download a most up to date copy of my resume](https://s3.amazonaws.com/com.mandarup.public/mandar-upadhye-resume.pdf)
+
+  ##### Acknoledgement for Portfolio Jekyll Theme
+
+  This is a personal portfolio theme that is built from the ground up by Paul Le [fork the repository](https://github.com/LeNPaul/portfolio-jekyll-theme)
 
 contact: >
   # Contact
 
-  You may contact me [through my email](mailto:mandarupadhye@gmail.com) or [tweet at me](https://twitter.com/intent/tweet?text=%mandarupadhye) if you have any questions or would like to bring up any issues.
+  You may reach out to me [via email](mailto:mandarupadhye@gmail.com) or [tweet at me](https://twitter.com/intent/tweet?text=%mandarupadhye).
 
 #-------------------------------
 # Work Section
@@ -69,6 +80,6 @@ social:
 - {icon: 'instagram', link: '#'}
 - {icon: 'github', link: 'https://github.com/mandarup'}
 - {icon: 'linkedin', link: 'https://linkedin.com/in/mandarup'}
-- {icon: 'envelope', link: 'mailto:#'}
+- {icon: 'envelope', link: 'mailto:mandarupadhye@gmail.com'}
 
 # social network icons available: 'twitter' / 'facebook' / 'github' / 'pinterest' 'google-plus' / 'linkedin' / 'youtube' / 'instagram' / 'dribbble' / 'behance' / 'soundcloud' / 'vine'
