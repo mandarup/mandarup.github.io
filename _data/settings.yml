@@ -76,7 +76,7 @@ projects:
 # Contact Section
 
 social:
-- {icon: 'twitter', link: '#'}
+- {icon: 'twitter', link: 'https://twitter.com/MandarUpadhye'}
 - {icon: 'instagram', link: '#'}
 - {icon: 'github', link: 'https://github.com/mandarup'}
 - {icon: 'linkedin', link: 'https://linkedin.com/in/mandarup'}
