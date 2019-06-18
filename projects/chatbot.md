@@ -3,16 +3,15 @@ layout: post
 title: 'Feeling Chatty?'
 ---
 
-TL;DR
 
-Chatbots are amazing, aren't they? If you are in a rush, feel free to click on the above demo link to see it in action.
+Chatbots are amazing, aren't they? If you are in a rush, feel free to click on the demo link to see it in action.
 
 {% include image.html url="http://chat.curiositybytes.com" image="projects/chatbot/chatbot.gif" %}
+
 
 Or, try it out below:
 
 {% include embed.html url="https://chat.curiositybytes.com"  %}
-
 
 #### Version 1 - Monolithic App
 
