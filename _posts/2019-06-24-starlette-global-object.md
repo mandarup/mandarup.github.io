@@ -1,7 +1,8 @@
-# Storing globally accessible objects in a session scope and across sessions in Starlette
-
-[Reference](https://github.com/encode/starlette/issues/374)
-
+---
+layout: post
+title: "How to sotre globally accessible objects in a session scope and across sessions in Starlette"
+categories: [til, tech]
+---
 
 In Flask this can be done using the `g` object:
 ```python
@@ -33,4 +34,5 @@ request["foo"] = whatever().
 # to setup and teardown any network connections or other resources.
 ```
 
-This answer was provided by Tom Christie, author of Starlette on 2/1/2019.
+This answer was provided by Tom Christie, author of Starlette on 2/1/2019. [Reference](https://github.com/encode/starlette/issues/374)
+
