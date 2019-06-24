@@ -2,6 +2,7 @@
 layout: post
 title: "How to sotre globally accessible objects in a session scope and across sessions in Starlette"
 categories: [til, tech]
+tags: [webdev, python]
 ---
 
 In Flask this can be done using the `g` object:
