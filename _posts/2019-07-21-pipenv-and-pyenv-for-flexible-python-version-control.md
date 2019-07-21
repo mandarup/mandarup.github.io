@@ -1,4 +1,9 @@
-
+---
+layout: post
+title: "Controlling python versions with Pipenv + pyenv."
+categories: [til, tech]
+tags: [python, version, pyenv, pipenv]
+---
 
 
 # Pipenv + pyenv
