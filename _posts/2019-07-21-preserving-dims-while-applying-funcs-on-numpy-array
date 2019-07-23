@@ -1,3 +1,10 @@
+---
+layout: post
+title: "Preserving dims of numpy array when apply func along axis."
+categories: [til, tech]
+tags: [python, numpy]
+---
+
 
 I was trying to  normalize  3d tensors along specific dims. This stackoverflow [example](https://stackoverflow.com/questions/42460217/how-to-normalize-a-4d-numpy-array) came in handy
 
