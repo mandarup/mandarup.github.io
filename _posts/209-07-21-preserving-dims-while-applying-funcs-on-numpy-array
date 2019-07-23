@@ -1,0 +1,20 @@
+
+I was trying to  normalize  3d tensors along specific dims. This stackoverflow [example](https://stackoverflow.com/questions/42460217/how-to-normalize-a-4d-numpy-array) came in handy
+
+```python
+import numpy as np
+x_train = np.random.rand((10, 2, 5))
+
+_min = x_train.min(axis=(0, 1), keepdims=True)
+_max = x_train.max(axis=(0, 1), keepdims=True)
+# (v - v_min)/(v_max - v_min)
+
+_mean = x_train.mean(axis=(0, 1), keepdims=True)
+_std = x_train.std(axis=(0, 1), keepdims=True)
+
+_mean.shape
+# (1,1,5)
+
+# then x_train can be normalized easily with
+((x_train - _mean) / _std).mean(axis=(0, 1), keepdims=True)
+```
