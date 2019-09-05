@@ -24,15 +24,14 @@ This code was  tested in a simulator and then  deployed on a real car, giving it
 #### System Architecture
 
 
-This project uses ROS nodes to implement core functionality of the autonomous vehicle system, including traffic light detection, control, and waypoint following. Code is tested using a simulator, and only after thourough testing, is deployed on a real car.
+This project uses ROS nodes to implement core functionality of the autonomous vehicle system that  includes traffic light detection, control, and waypoint following. Code is tested using a simulator, and only after thorough testing, is deployed on a real car.
 
-The following is a system architecture diagram showing the ROS nodes and topics used in the project. The ROS nodes and topics shown in the diagram are described briefly in the Code Structure section below, and more detail is provided for each node in later classroom concepts of this lesson.
+The following is a system architecture diagram showing the ROS nodes and topics used in the project. The ROS nodes and topics shown in the diagram are described briefly in the Code Structure section below, and more details are provided for each node in next section.
 
 
 ![System Architecture](/assets/img/projects/programming-a-self-driving-car/system-architecture.png)
 
 Next section covers some module specific details.
-
 
 #### Code Structure
 
@@ -45,7 +44,6 @@ This package contains the traffic light detection node: `tl_detector.py`. This n
 The /current_pose topic provides the vehicle's current position, and `/base_waypoints` provides a complete list of waypoints the car will be following.
 
 This is both a traffic light detection node and a traffic light classification node. Traffic light detection  takes place within `tl_detector.py`, whereas traffic light classification  takes place within `../tl_detector/light_classification_model/tl_classfier.py`
-
 
 
 ##### Waypoint Updater
@@ -67,13 +65,13 @@ The car used for deployment is equipped with a drive-by-wire (dbw) system, meani
 
 In addition to these packages, the following packages are taken off-the-shelf without any changes. The styx and styx_msgs packages are used to provide a link between the simulator and ROS, and to provide custom ROS message types:
 
-- (path_to_project_repo)/ros/src/styx/
+- `(path_to_project_repo)/ros/src/styx/`
 A package that contains a server for communicating with the simulator, and a bridge to translate and publish simulator messages to ROS topics.
-- (path_to_project_repo)/ros/src/styx_msgs/
+- `(path_to_project_repo)/ros/src/styx_msgs/`
 A package which includes definitions of the custom ROS message types used in the project.
-- (path_to_project_repo)/ros/src/waypoint_loader/
+- `(path_to_project_repo)/ros/src/waypoint_loader/`
 A package which loads the static waypoint data and publishes to /base_waypoints.
-- (path_to_project_repo)/ros/src/waypoint_follower/
+- `(path_to_project_repo)/ros/src/waypoint_follower/`
 A package containing code from Autoware which subscribes to /final_waypoints and publishes target vehicle linear and angular velocities in the form of twist commands to the /twist_cmd topic.
 
 
@@ -156,9 +154,9 @@ roslaunch launch/site.launch
 
 #### Credits
 
-This project developed as part of Self Driving Engineer curriculum on Udacity, and was made succussful by a team effort from following members:
-- Abdi Ibrahim
-- Alberto Escarlate
-- Anton Bossenbroek
-- Mandar Upadhye
-- Martin Lippl
+This project developed as part of Self Driving Engineer curriculum on Udacity, and was made successful by a team effort from following members (an international collaboration):
+- Abdi Ibrahim  (Canada)
+- Alberto Escarlate (US)
+- Anton Bossenbroek (EU)
+- Mandar Upadhye (US)
+- Martin Lippl (Germany)
