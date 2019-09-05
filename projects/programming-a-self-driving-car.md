@@ -15,8 +15,9 @@ The source code is hosted [here](https://github.com/mandarup/CarND-Capstone)
 
 This code was  tested in a simulator and then  deployed on a real car, giving it self driving capability. Below is a video recording from the deployment run, demonstrating smooth braking and stopping at a stop light and then acceleration. The waypoints of this route are predefined for this exercise.
 
-![Deployment](/assets/img/projects/programming-a-self-driving-car/deployment-video.gif)
+<!-- ![Deployment](/assets/img/projects/programming-a-self-driving-car/deployment-video.gif) -->
 
+{% include image.html url="https://youtu.be/83oglkuzBj4" image="projects/programming-a-self-driving-car/deployment-video.gif" %}
 
 
 
