@@ -47,21 +47,21 @@ This is both a traffic light detection node and a traffic light classification n
 
 
 
-#### Waypoint Updater
+##### Waypoint Updater
 
 ![Waypoint Updater](/assets/img/projects/programming-a-self-driving-car/waypoint-updater-node.png)
 
 This package contains the waypoint updater node: `waypoint_updater.py`. The purpose of this node is to update the target velocity property of each waypoint based on traffic light and obstacle detection data. This node will subscribe to the `/base_waypoints`, `/current_pose`, `/obstacle_waypoint`, and `/traffic_waypoint` topics, and publish a list of waypoints ahead of the car with target velocities to the `/final_waypoints` topic.
 
 
-#### Drive-by-Wire (DBW) Node
+##### Drive-by-Wire (DBW) Node
 
 ![DBW Node](/assets/img/projects/programming-a-self-driving-car/dbw-node.png)
 
 The car used for deployment is equipped with a drive-by-wire (dbw) system, meaning the throttle, brake, and steering have electronic control. This package contains the files that are responsible for control of the vehicle: the node dbw_node.py and the file twist_controller.py, along with a pid and lowpass filter that  is used in the  implementation. The `dbw_node` subscribes to the `/current_velocity` topic along with the /twist_cmd topic to receive target linear and angular velocities. Additionally, this node will subscribe to `/vehicle/dbw_enabled`, which indicates if the car is under dbw or driver control. This node will publish throttle, brake, and steering commands to the `/vehicle/throttle_cmd`, `/vehicle/brake_cmd`, and `/vehicle/steering_cmd` topics.
 
 
-#### Additional Packages
+##### Additional Packages
 
 
 In addition to these packages, the following packages are taken off-the-shelf without any changes. The styx and styx_msgs packages are used to provide a link between the simulator and ROS, and to provide custom ROS message types:
