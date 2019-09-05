@@ -67,7 +67,7 @@ contact: >
 
 projects:
 - {name: 'ChatBot', folder: 'chatbot', file: 'projects/chatbot.html'}
-# - {name: 'Project Two', folder: 'proj-2', file: 'projects/proj-2.html'}
+- {name: 'Programming A Real Self Driving Car', folder: 'programming-a-self-driving-car', file: 'projects/programming-a-self-driving-car.html'}
 # - {name: 'Project Three', folder: 'proj-3', file: 'projects/proj-3.html'}
 # - {name: 'Project Four', folder: 'proj-4', file: 'projects/proj-4.html'}
 # - {name: 'Project Five', folder: 'proj-5', file: 'projects/proj-5.html'}
