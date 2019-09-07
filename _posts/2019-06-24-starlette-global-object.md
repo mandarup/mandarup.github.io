@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "How to sotre globally accessible objects in a session scope and across sessions in Starlette"
+title: "How to store globally accessible objects in a session scope and across sessions in Starlette"
 categories: [til, tech]
 tags: [webdev, python]
 ---
@@ -26,14 +26,13 @@ def teardown_db():
 In Starlette this can be done using requests object like:
 
 ```python
-# For stuff that has a request/response lifespan, you can store arbitrary stuff on the request "scope". 
+# For stuff that has a request/response lifespan, you can store arbitrary stuff on the request "scope".
 request["foo"] = whatever().
 
-# For lifespan, use globals, with 
-@app.on_event('startup') 
-@app.on_event('shutdown') 
+# For lifespan, use globals, with
+@app.on_event('startup')
+@app.on_event('shutdown')
 # to setup and teardown any network connections or other resources.
 ```
 
 This answer was provided by Tom Christie, author of Starlette on 2/1/2019. [Reference](https://github.com/encode/starlette/issues/374)
-

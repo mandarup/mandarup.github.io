@@ -154,7 +154,7 @@ roslaunch launch/site.launch
 
 #### Credits
 
-This project developed as part of Self Driving Engineer curriculum on Udacity, and was made successful by a team effort from following members (an international collaboration):
+This project was developed as part of Self Driving Engineer curriculum on Udacity, and was made successful by a team effort from following members (an international collaboration):
 - Abdi Ibrahim  (Canada)
 - Alberto Escarlate (US)
 - Anton Bossenbroek (EU)
