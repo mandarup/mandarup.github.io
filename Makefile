@@ -1,6 +1,6 @@
 
 
-serve-incremental :
+serveinc :
 	bundle exec jekyll serve --incremental
 
 serve :
