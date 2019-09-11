@@ -10,6 +10,9 @@ This project explains how to implement core components of the backend of a self 
 The source code is hosted [here](https://github.com/mandarup/CarND-Capstone)
 
 
+- TOC
+{:toc}
+
 
 #### Deployment
 

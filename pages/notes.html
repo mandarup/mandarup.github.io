@@ -40,6 +40,8 @@ title: Notes
 
 <section>
   <div class="blog-container">
+      {% include search.html %}
+      
       {% assign tags =  site.notes | map: 'tags' | join: ','  | split: ',' | uniq %}
       {% for tag in tags %}
         <h3>{{ tag }}</h3>

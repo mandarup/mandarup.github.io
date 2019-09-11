@@ -3,8 +3,10 @@ layout: default
 title: TIL
 ---
 
+
 <section>
   <div class="blog-container">
+    {% include search.html %}
     {% for category in site.categories %}
       {% if category[0] == "til" %}
         <ul>
