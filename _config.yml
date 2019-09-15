@@ -2,7 +2,8 @@
 
 markdown: kramdown
 permalink: /:categories/:year/:month/:day/:title:output_ext
-plugins:             [jekyll-sitemap, jekyll-feed,  jekyll-seo-tag]
+plugins:  [jekyll-sitemap, jekyll-feed,  jekyll-seo-tag]
+
 
 port: 4000
 
@@ -21,5 +22,8 @@ author: "Mandar Upadhye"
 
 collections:
   notes :
+    output: true
+    permalink: /:collection/:name
+  tils :
     output: true
     permalink: /:collection/:name
