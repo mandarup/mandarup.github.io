@@ -8,7 +8,7 @@ tags: [jekyll, toc]
 
 ##### Table of Contents (ToC)
 
-A ToC is so awesome and easy to produce. Have you noticed our ToC on this post? It's generated automatically by Kramdown with this simple markup:
+A ToC is so awesome and easy to produce. Automatically generate by Kramdown with this simple markup:
 
 ```
 - TOC
