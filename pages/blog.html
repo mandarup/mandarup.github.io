@@ -5,13 +5,14 @@ title: Blog
 
 
 <section>
+  <div class="header">
+      {% include search.html %}
+  </div>
   <div class="blog-container">
     {% for category in site.categories %}
       {% if category[0] == "blog" %}
-        <ul>
-          {% for post in category[1] %}
-            <!-- <li><a href="{{ post.url }}">{{ post.title }}</a></li> -->
-            <div class="blog-unit">
+        {% for post in category[1] %}
+            <!-- <div class="blog-unit">
               <h1><a href="{{ site.github.url }}{{ post.url }}">{{ post.title }}</a></h1>
               <span class="blog-date">
                 {% assign d = post.date | date: "%-d"  %}
@@ -23,10 +24,50 @@ title: Blog
                   {% else %}{{ d }}th{% endcase %},
                 {{ post.date | date: "%Y" }}
               </span>
+            </div> -->
+            <div class="blog-unit">
+              <span class="blog-date">
+                {% assign d = post.date | date: "%-d"  %}
+                <li>
+                    <!-- {{ post.date | date: "%b-%d-%Y" }}  -->
+                    <a href="{{ site.github.url }}{{ post.url }}">{{ post.title }}</a></li>
+              </span>
             </div>
-          {% endfor %}
-        </ul>
+        {% endfor %}
       {% endif %}
     {% endfor %}
+  </div>
+
+  <div class="blog-container">
+      <h2> TIL (Today I Learned / Gists) </h2>
+      {% assign tags =  site.tils | map: 'tags' | join: ','  | split: ',' | uniq %}
+      <!-- {% for tag in tags %}
+        <h3>{{ tag }}</h3>
+        <ul>
+        {% for til in site.tils %}
+          {% if til.tags contains tag %}
+          <li><a href="{{ site.baseurl }}{{ til.url }}">{{ til.title }}</a></li>
+          {% endif %}
+        {% endfor %}
+        </ul>
+      {% endfor %} -->
+
+    {% for post in site.tils %}
+      <div class="blog-unit">
+        <ul>
+          {% assign d = post.date | date: "%-d"  %}
+          <!-- {{ post.date | date: "%B" }}
+          {% case d %}
+            {% when '1' or '21' or '31' %}{{ d }}st
+            {% when '2' or '22' %}{{ d }}nd
+            {% when '3' or '23' %}{{ d }}rd
+            {% else %}{{ d }}th{% endcase %},
+          {{ post.date | date: "%Y" }} -->
+          <li> <span class="blog-date">{{ post.date | date: "%b-%d-%Y" | date_to_string}} </span>  &raquo; <a href="{{ site.github.url }}{{ post.url }}">{{ post.title }}</a>
+          </li>
+        </ul>
+      </div>
+    {% endfor %}
+
   </div>
 </section>

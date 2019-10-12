@@ -29,4 +29,20 @@ title: TIL
       {% endif %}
     {% endfor %}
   </div>
+
+  <div class="blog-container">
+      {% include search.html %}
+
+      {% assign tags =  site.tils | map: 'tags' | join: ','  | split: ',' | uniq %}
+      {% for tag in tags %}
+        <h3>{{ tag }}</h3>
+        <ul>
+        {% for til in site.tils %}
+          {% if til.tags contains tag %}
+          <li><a href="{{ site.baseurl }}{{ note.url }}">{{ til.title }}</a></li>
+          {% endif %}
+        {% endfor %}
+        </ul>
+      {% endfor %}
+  </div>
 </section>
